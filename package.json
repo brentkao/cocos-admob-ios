@@ -1,0 +1,10 @@
+{
+  "name": "Admob",
+  "uuid": "23fad7a9-6a52-44a2-abdf-e810162708f6",
+  "creator": {
+    "version": "3.8.2"
+  },
+  "dependencies": {
+    "cocos-admob-ios": "^1.0.0"
+  }
+}

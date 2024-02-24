@@ -1,0 +1,8 @@
+{
+  "name": "cocos-admob-ios",
+  "version": "1.1.1",
+  "description": "A comprehensive AdMob integration for iOS apps built with Cocos Creator 3.8 or higher. Features include displaying banner ads, interstitial ads, and rewarded ads, providing a seamless advertising solution for developers.",
+  "main": "AdmobManger.ts",
+  "author": "Brent Kao",
+  "license": "ISC"
+}
