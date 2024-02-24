@@ -8,7 +8,7 @@ export declare interface GameCenterManagerConfig {
   /** 插頁式廣告 */
   interstitialAdId?: string;
   /** 獎勵廣告 */
-  rewardVideoAdId?: string;
+  rewardedVideoADId?: string;
 }
 
 class AdmobAdManger {
@@ -20,7 +20,7 @@ class AdmobAdManger {
     // 預設的測試廣告id
     bannerAdId: "ca-app-pub-3940256099942544/2934735716",
     interstitialAdId: "ca-app-pub-3940256099942544/4411468910",
-    rewardVideoAdId: "ca-app-pub-3940256099942544/1712485313",
+    rewardedVideoADId: "ca-app-pub-3940256099942544/1712485313",
   };
 
   constructor() {
@@ -37,18 +37,18 @@ class AdmobAdManger {
     /** 插頁式廣告 */
     interstitialAdId?: string;
     /** 獎勵廣告 */
-    rewardVideoAdId?: string;
+    rewardedVideoADId?: string;
   }) {
     console.log("初始化廣告ids", this._admobConfig);
     if (config.openLog) this.openLog = true;
     if (config.bannerAdId) this._admobConfig.bannerAdId = config.bannerAdId;
     if (config.interstitialAdId)
       this._admobConfig.interstitialAdId = config.interstitialAdId;
-    if (config.rewardVideoAdId)
-      this._admobConfig.rewardVideoAdId = config.rewardVideoAdId;
+    if (config.rewardedVideoADId)
+      this._admobConfig.rewardedVideoADId = config.rewardedVideoADId;
     
     this.registerAndLoadAd(
-      this._admobConfig.rewardVideoAdId,
+      this._admobConfig.rewardedVideoADId,
       this._admobConfig.interstitialAdId,
       this._admobConfig.bannerAdId
     );
@@ -56,17 +56,17 @@ class AdmobAdManger {
 
   /**
    * 註冊廣告ids
-   * @param rewardVideoAdId 激励视频id
+   * @param rewardedVideoADId 激励视频id
    * @param interstitialAdId 插頁式id
    * @param bannerAdId banner id
    */
   private registerAndLoadAd(
-    rewardVideoAdId: string,
+    rewardedVideoADId: string,
     interstitialAdId: string,
     bannerAdId: string
   ) {
     let info = {
-      rewaredVideoAdId: rewardVideoAdId,
+      rewardedVideoADId: rewardedVideoADId,
       interstitialAdId: interstitialAdId,
       bannerAdId: bannerAdId,
       openLog: this.openLog,

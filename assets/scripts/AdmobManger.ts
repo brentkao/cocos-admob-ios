@@ -1,6 +1,7 @@
 import { _decorator, Component, Label } from "cc";
 // import AdmobAdManger, { GameCenterManagerConfig } from "./Admob/AdmobManger";
 import AdmobAdManger, { GameCenterManagerConfig } from "cocos-admob-ios";
+import { AdmobConfig } from "./Config";
 const { ccclass, property } = _decorator;
 
 @ccclass("AdmobManger")
@@ -12,7 +13,13 @@ export class AdmobManger extends Component {
   private _count: number = 0;
 
   start() {
-    const config: GameCenterManagerConfig = { openLog: true };
+    const config: GameCenterManagerConfig = {
+      openLog: AdmobConfig.openLog,
+      bannerAdId: AdmobConfig.admobAdIds.bannerAdId,
+      interstitialAdId: AdmobConfig.admobAdIds.interstitialAdId,
+      rewardedVideoADId: AdmobConfig.admobAdIds.rewardedVideoADId,
+    };
+
     AdmobAdManger.initAd(config);
   }
 

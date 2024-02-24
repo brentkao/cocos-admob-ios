@@ -1,29 +1,25 @@
-/**
- * admob相关配置
- */
+/**  admob相關配置 */
 export namespace AdmobConfig {
-  /**是否打开日志输出 */
+  /**是否打開日誌輸出 */
   export const openLog = true;
 
-  /** 是否启用测试广告id( google广告id 测试时候用google的测试广告不然可能有封号风险)  */
-  export const isUseTestAd = true;
-  // export const isUseTestAd = false;
+  /** 是否啟用測試廣告id( google廣告id 測試時候用google的測試廣告不然可能有封號風險)  */
+  export const isUseTestAd = true; //=> dev
+  // export const isUseTestAd = false; //=> prod
 
-  /**
-   * 配置的广告id(根据 isUseTestAd参数自动使用测试广告id)
-   */
+  /** 配置的廣告id(根據 isUseTestAd參數自動使用測試廣告id) */
   export const admobAdIds = {
-    /**激励视频广告id */
-    rewardVideoAdId: isUseTestAd
+    /**激勵視頻廣告id */
+    rewardedVideoADId: isUseTestAd
       ? "ca-app-pub-3940256099942544/1712485313"
-      : "ca-app-pub-3575797160018144/3343136568",
-    /**插屏广告id */
+      : "your admob rewardedVideoADId",
+    /**插屏廣告id */
     interstitialAdId: isUseTestAd
       ? "ca-app-pub-3940256099942544/4411468910"
-      : "ca-app-pub-3575797160018144/5823365216",
-    /**banner(横幅)广告id */
+      : "your admob interstitialAdId",
+    /**banner(橫幅)廣告id */
     bannerAdId: isUseTestAd
       ? "ca-app-pub-3940256099942544/2934735716"
-      : "ca-app-pub-3575797160018144/9996530708",
+      : "your admob bannerAdId",
   };
 }
