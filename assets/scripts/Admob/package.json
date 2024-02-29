@@ -1,6 +1,6 @@
 {
   "name": "cocos-admob-ios",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brentkao/cocos-admob-ios"

@@ -1,4 +1,5 @@
 # Cocos Creator 3.8 Admob iOS app
+[English](./README_en.md)
 
 ## Tool 工具
 
