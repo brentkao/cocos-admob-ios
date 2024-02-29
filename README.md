@@ -1,16 +1,27 @@
 # Cocos Creator 3.8 Admob iOS app
 
-## Setup
-1. 使用 Cocos Creator 打開專案
-2. npm i
-3. 進行 Build iOS. ( Project -> Build -> New Build Task -> 下方步驟做完 -> Build )
-![alt text](./readme_files/Build-iOS-01.png)
-![alt text](./readme_files/Build-iOS-02.png)
-![alt text](./readme_files/Build-iOS-03.png)
+## Tool 工具
 
-3. 將 `native-ios-build-files` 中的 `GoogleMobileAdsSdkiOS-10.14.0.zip` 解壓縮，並將所有檔案 「選取」-> 「複製」。(.zip除外)
-![alt text](./readme_files/PassIt-01.png)
-![alt text](./readme_files/PassIt-02.png)
-4. 前往 /native/engine/ios，將檔案「 貼上 」&「 取代 」。
+自動文件補足工具(cocos-native-ios-helper) : [Download](https://github.com/brentkao/cocos-native-ios-helper)。
 
-//TODO 等下一版補充
+## Setup 設定
+
+1. 使用 Cocos Creator 打開專案。
+2. run `npm i`。
+3. 使用 `cocos-native-ios-helper` 工具生成文件。
+4. 進行 Build iOS. [官方教學](https://docs.cocos.com/creator/manual/zh/editor/publish/ios/build-example-ios.html)
+5. Xcode `Source Files` add file。
+6. Run Xcode Simulator。
+
+
+##  Tutorial 教學影片
+準備拍攝中(Preparing for shooting)
+
+
+## Contact Me
+
+若您在操作上遇到任何問題，或有無法解決的困難，歡迎透過 Discord (parazeni.ko) 聯繫我。
+如果您有其他功能的相關知識，或願意分享技術資源，我也非常歡迎您的聯繫和交流。
+
+Should you encounter any issues or have questions during the operation, feel free to reach out to me via Discord (parazeni.ko).
+Additionally, if you're willing to share more technical resources or interested in learning about other features, I'm open to communication as well.
